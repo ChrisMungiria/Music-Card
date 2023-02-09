@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    display: flex;
+    border: none;
+    color: black;
+    height: 100px;
+    width: 380px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(40, 54, 135, 0.731);
+}
+
+.songImage {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+    background: url(Rave_&_Roses.jpg);
+    box-shadow: -2px 7px 4px #BCB68B;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.songImage:hover {
+    top: 10px;
+    width: 110px;
+    height: auto;
+    box-shadow: -8px 10px 8px #9b956d;
+    cursor: pointer;
+}
+
+.songArtist {
+    position: absolute;
+    width: 100px;
+    height: 18px;
+    left: 150px;
+    top: 30px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+.titleAndAlbum {
+    position: absolute;
+    width: 200px;
+    height: 12px;
+    left: 150px;
+    top: 55px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+
+    color: #494949;
+}
+
+.pulse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    top: 35px;
+    left: 300px;
+    font-size: 20px;
+    background: linear-gradient(165.43deg, #6898DF -5.38%, #C185DD 100.54%);
+}
+
+.fa-regular {
+    color: #1200777d;
+}
+
+.pulse:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #6760c7;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+
+
+.pulse:after {
+    animation: pulse 2s ease-out infinite;
+}
+
+@keyframes pulse {
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
